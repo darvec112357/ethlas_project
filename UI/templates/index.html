@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detection</title>
+</head>
+<body>
+    <h1>Phishing Detection</h1>
+    <form action="/predict" method="POST">
+        <label for="message">Enter a message:</label><br>
+        <textarea name="message" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Predict" />
+    </form>
+    
+
+    {% if result %}
+    <p><strong>Result:</strong> {{ result }}</p>
+    {% endif %}
+</body>
+</html>
