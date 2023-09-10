@@ -17,7 +17,7 @@ python preprocess.py
 
 ## 3. Training
 
-The training was run on a Kaggle kernel with GPU T4*2, which took roughly an hour to finish. The model used is based on Roberta. After training, a model.h5 will be created. Copy this model into UI/model for prediction purpose.
+The training was run on a Kaggle kernel with GPU T4*2, which took roughly an hour to finish. The model used is based on Roberta and the training accuracy reached 98%. After training, a model.h5 will be created. Copy this model into UI/model for prediction purpose.
 ```
 python train.py
 ```
@@ -28,6 +28,20 @@ Run the following command to evaluate the performance of the trained model. Wher
 ```
 python predict.py data.csv test_size
 ```
+
+Given below is the result after running
+```
+python predict.py train.csv 200
+```
+with confusion matrix
+
+||Predicicted True|Predicted False|
+|-----|-----|-----|
+|Actual True|74|0|
+|Actual False|2|124|
+
+and a 0.99 F1 score.
+
 
 ## 5. Integrate into Flask.
 Run the following command will create a running server. Users can enter any text they want to check and the model will predict an output, either being Ham or Phishing.
