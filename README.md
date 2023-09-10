@@ -1,4 +1,4 @@
-This task is not easy, because almost every aspect of it is new to me, from LLM to flask, docker (I did have experience with docker during an internship three years ago, but barely remember it). 
+This task is not easy, because almost every aspect of it is new to me, from LLM to flask, docker (I did have experience with docker during an internship three years ago, but barely remember it). It took me rouhgly one week to complete this task, except on Wednesday when I have two other tests to prepare. I would say this duration is reasonble, considered the fact that I have to learn everything from scratch.
 
 # Phishing Message Case-Study
 ## 1. Install python requirements
